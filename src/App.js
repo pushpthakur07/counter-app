@@ -2,7 +2,7 @@
 import React from 'react';
 import './App.css';
 import { useState } from 'react';
-import {useEffect, useRef} from 'react';
+import { useRef} from 'react';
 // import logo from './logo.svg';
 
 // function Button({ onClick, children }) {
@@ -61,11 +61,11 @@ export default function App() {
 
   
   const ref = useRef(null);
-  useEffect(() => {
-    if (!ref.current.classList.contains('light')) {
-      setCounter(0)
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (!ref.current.classList.contains('')) {
+  //     setCounter(0)
+  //   }
+  // }, []);
 
 
 
