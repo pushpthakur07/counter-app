@@ -2,6 +2,7 @@
 import React from 'react';
 import './App.css';
 import { useState } from 'react';
+import {useEffect, useRef} from 'react';
 // import logo from './logo.svg';
 
 // function Button({ onClick, children }) {
@@ -37,7 +38,6 @@ export default function App() {
   const [counter, setCounter] = useState(0);
 
   const incrementCounter = () => {
-
     if(counter >= 3){
     return
     }
@@ -49,11 +49,26 @@ export default function App() {
       setCounter(counter - 1);
     }
   };
-  const [isActive, setActive] = useState(false);
 
+  const [isActive, setActive] = useState(false);
   const handleToggle = () => {
     setActive(!isActive);
+    if (ref.current.classList.contains('light')) {
+      setCounter(0)
+    }
   };
+
+
+  
+  const ref = useRef(null);
+  useEffect(() => {
+    if (!ref.current.classList.contains('light')) {
+      setCounter(0)
+    }
+  }, []);
+
+
+
 
   // const x = 23;
   // let text = "goodddd";
@@ -68,18 +83,27 @@ const my2 = <h1>{(y) > 4 ? "go" : "come"}</h1>
 
 const paragraph = React.createElement('h3', {}, 'This is a paragraph without using JSX!');
 
+const qw = 6;
+let text = "if < then 6"
+if (qw < 20){
+  text = "text is greater then 20"
+}
+const re =<h5>{text}</h5>
+const r = 9;
+const nw =<h4>{(r) < 8 ? "less then 8" : "greater then 8" }</h4>
 
 
  return (
 
-    <div className = {`test level${counter} ${isActive ? "light" :  ""}`}>
+    <div ref={ref} className = {`test level${counter} ${isActive ? "light" :  ""}`}>
     <div className="ticket-options" style={{ backgroundImage: `url('../hnt.jpg')` }}>
       {/* <img src={logo} className="App-logo" alt="logo" /> */}
       {/* <img src="../logo192.png" alt="logo" /> */}
       {/* <PlayButton movieName="Kiki's Delivery Service" />
       <UploadButton /> */}
      <div class="light_setng">
-        <div class="light_btn switch" onClick={handleToggle}>
+        <div
+         class="light_btn switch" onClick={handleToggle}>
         <span class="switch-label" data-on="On" data-off="Off"></span> 
           <span class="switch-handle"></span>
         </div>
@@ -107,6 +131,8 @@ const paragraph = React.createElement('h3', {}, 'This is a paragraph without usi
 
 
     </div>
+    {nw}
+    {re}
     {paragraph}
     <p>{my2}</p>
     <p>{myE}</p>
