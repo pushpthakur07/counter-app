@@ -1,5 +1,11 @@
 # Getting Started with Create React App
 ![image](https://github.com/pushpthakur07/counter-app/assets/153160002/12577d7d-9361-40c9-994e-927926f05248)
+![image](https://github.com/pushpthakur07/counter-app/assets/153160002/872ce8dc-9fc3-478f-80ae-d52df0075dfb)
+![image](https://github.com/pushpthakur07/counter-app/assets/153160002/471c298f-e6c1-413d-a1b5-72578475bd95)
+![image](https://github.com/pushpthakur07/counter-app/assets/153160002/8eeaaf5f-bba3-4660-a050-3b228c40d09d)
+
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
