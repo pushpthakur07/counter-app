@@ -51,6 +51,7 @@ export default function App() {
   };
 
   const [isActive, setActive] = useState(false);
+  const ref = useRef(null);
   const handleToggle = () => {
     setActive(!isActive);
     if (ref.current.classList.contains('light')) {
@@ -60,7 +61,7 @@ export default function App() {
 
 
   
-  const ref = useRef(null);
+  // const ref = useRef(null);
   // useEffect(() => {
   //   if (!ref.current.classList.contains('')) {
   //     setCounter(0)

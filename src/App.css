@@ -89,9 +89,9 @@ input[type="text"] {
 .bulb-container{
   position: absolute;
   left: 31%;
-  top: 13px;
+  top: 0px;
   width: 200px;
-  height: 220px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -102,10 +102,11 @@ input[type="text"] {
 
 .wire{
   width: 4px;
-  height: 100px;
-  background: black;
+  height: 130px;
+  background: #fff;
   position: relative;
   z-index: 1;
+  opacity: .1;
 }
 .connector{
   background: #292929;
@@ -119,7 +120,7 @@ input[type="text"] {
   z-index: 2;
   opacity: .1;
 }
-.light .connector{
+.light .connector,.light .wire{
   opacity: 1;
 }
 .grove{
