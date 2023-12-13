@@ -2,7 +2,7 @@
 import React from 'react';
 import './App.css';
 import { useState } from 'react';
-import { useRef} from 'react';
+// import { useRef} from 'react';
 // import logo from './logo.svg';
 
 // function Button({ onClick, children }) {
@@ -49,18 +49,29 @@ export default function App() {
       setCounter(counter - 1);
     }
   };
+    // ---setcounter = 0 with useRef  ---
+  // const [isActive, setActive] = useState(false);
+  // const ref = useRef(null);
+  // const handleToggle = () => {
+  //   console.log('Element contains class');
+  //   setActive(!isActive);
+  //   if (ref.current.classList.contains('light')) {
+  //     setCounter(0)
+  //   }
+  // };
+
 
   const [isActive, setActive] = useState(false);
-  const ref = useRef(null);
-  const handleToggle = () => {
+  const handleToggle = event => {
+
     setActive(!isActive);
-    if (ref.current.classList.contains('light')) {
+    if (!event.currentTarget.classList.contains('light')) {
       setCounter(0)
     }
   };
 
 
-  
+
   // const ref = useRef(null);
   // useEffect(() => {
   //   if (!ref.current.classList.contains('')) {
@@ -92,11 +103,22 @@ if (qw < 20){
 const re =<h5>{text}</h5>
 const r = 9;
 const nw =<h4>{(r) < 8 ? "less then 8" : "greater then 8" }</h4>
+function Car(props) {
+  return <h2>I am a { props.brand }!</h2>;
+}
 
+function Garage() {
+  return (
+    <>
+      <h1>Who lives in my garage?</h1>
+      <Car brand="Ford" />
+    </>
+  );
+}
 
  return (
 
-    <div ref={ref} className = {`test level${counter} ${isActive ? "light" :  ""}`}>
+  <div className = {`test level${counter} ${isActive ? "light" :  ""}`}>
     <div className="ticket-options" style={{ backgroundImage: `url('../hnt.jpg')` }}>
       {/* <img src={logo} className="App-logo" alt="logo" /> */}
       {/* <img src="../logo192.png" alt="logo" /> */}
@@ -132,6 +154,7 @@ const nw =<h4>{(r) < 8 ? "less then 8" : "greater then 8" }</h4>
 
 
     </div>
+    <Garage />
     {nw}
     {re}
     {paragraph}
