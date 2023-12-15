@@ -2,6 +2,7 @@
 import React from 'react';
 import './App.css';
 import { useState } from 'react';
+// import { useEffect } from 'react';
 // import { useRef} from 'react';
 // import logo from './logo.svg';
 
@@ -65,6 +66,11 @@ export default function App() {
   const handleToggle = event => {
 
     setActive(!isActive);
+    if (isActive) {
+      alert('Light OFF');
+    } else {
+      alert('Light ON');
+    }
     if (!event.currentTarget.classList.contains('light')) {
       setCounter(0)
     }
@@ -79,7 +85,16 @@ export default function App() {
   //   }
   // }, []);
 
-
+  // useEffect(()=>{
+  //   if(isActive) {
+  //     alert('on')
+  //   }
+  //   else {
+  //     alert('off')
+  //   }
+  //   }, [isActive]
+  //   );
+  
 
 
   // const x = 23;
@@ -101,6 +116,7 @@ if (qw < 20){
   text = "text is greater then 20"
 }
 const re =<h5>{text}</h5>
+
 const r = 9;
 const nw =<h4>{(r) < 8 ? "less then 8" : "greater then 8" }</h4>
 function Car(props) {
