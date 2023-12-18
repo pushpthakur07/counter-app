@@ -135,18 +135,18 @@ function Garage() {
  return (
 
   <div className = {`test level${counter} ${isActive ? "light" :  ""}`}>
-    <div className="ticket-options" style={{ backgroundImage: `url('../hnt.jpg')` }}>
+    <div className="ticket-options h-screen" style={{ backgroundImage: `url('../hnt.jpg')` }}>
       {/* <img src={logo} className="App-logo" alt="logo" /> */}
       {/* <img src="../logo192.png" alt="logo" /> */}
       {/* <PlayButton movieName="Kiki's Delivery Service" />
       <UploadButton /> */}
-     <div class="light_setng">
+     <div class="light_setng bg-stone-300 rounded-xl relative w-52 h-52 left-11 top-11 flex flex-col items-center justify-center border-solid border-8 border-lime-100">
         <div
-         class="light_btn switch" onClick={handleToggle}>
-        <span class="switch-label" data-on="On" data-off="Off"></span> 
-          <span class="switch-handle"></span>
+         class="light_btn switch block rounded-2xl box-content relative w-24 h-8 p-0.5 mr-2.5 mb-2.5 cursor-pointer" onClick={handleToggle}>
+        <span class="switch-label bg-customLime" data-on="On" data-off="Off"></span> 
+          <span class="switch-handle absolute w-7 h-7 left-1 top-1"></span>
         </div>
-        <div className="option-adult">
+        <div className="option-adult flex pointer-events-none">
               <button className="arrow-down arw-cmn" onClick={decrementCounter}></button>
               {/* <input type="text" value={counter}/> */}
               <button className="arrow-up arw-cmn" onClick={incrementCounter}></button>
@@ -154,7 +154,7 @@ function Garage() {
       </div>
 
     
-  <div class="bulb-container">
+  <div class="bulb-container absolute top-0 flex flex-col items-center w-52 h-64">
     <div class="wire"></div>
     <div class="connector">
       <div class="grove"></div>

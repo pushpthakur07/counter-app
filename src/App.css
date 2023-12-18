@@ -1,15 +1,8 @@
 .App { text-align: center; }
 .App-logo { height: 40vmin; pointer-events: none; }
-.option-adult { display: flex; pointer-events: none; }
 .test.light .option-adult { pointer-events: all; }
 input[type="text"] { text-align: center; }
 
-.ticket-options {
-  height: 100vh;
-}
-.light_setng { position: relative; width: 200px; height: 200px; background: lightgrey; border: 8px solid lightsteelblue;
-	 border-radius: 10px; left: 30px; top: 20px;
- display: flex; flex-direction: column; align-items: center; justify-content: center; }
 .test.level0.light .ticket-options:before { content: ''; position: absolute; left: 0; right: 0; top: 0; bottom: 0; height: 100%; width: 100%; 
 	background: rgba(0, 0, 0,.7); }
 .test.level1.light .ticket-options:before {
@@ -19,9 +12,8 @@ input[type="text"] { text-align: center; }
 .test.level3.light .ticket-options:before { background: rgba(0, 0, 0, 0); }
 .test .ticket-options:before { content: ''; position: absolute; left: 0; right: 0; top: 0; bottom: 0; height: 100%; width: 100%; background: rgba(0, 0, 0,.8); }
 
-.bulb-container{ position: absolute; left: 31%; top: 0px; width: 200px; height: 250px; display: flex; flex-direction: column; align-items: center;
+.bulb-container{left: 31%;
 	 z-index: 1; transform-origin: top; }
-
 
 .wire{ width: 4px; height: 130px; background: #fff; position: relative; z-index: 1; opacity: .1; }
 .connector{ background: #292929; width: 30px; aspect-ratio: 4/5; border-radius: 1px; display: flex; flex-direction: column; justify-content: space-evenly; 
@@ -45,18 +37,9 @@ button.arrow-down:before { content: ''; display: inline-block; vertical-align: m
 button.arrow-up:before { content: ""; display: inline-block; width: 0; height: 0; vertical-align: middle; border-style: solid;
 	 border-width: 0 5px 10px 5px; border-color: transparent transparent #007bff transparent; }
 .switch {
-	position: relative;
-	display: block;
-	width: 100px;
-	height: 30px;
-	padding: 3px;
-	margin: 0 10px 10px 0;
 	background: linear-gradient(to bottom, #eeeeee, #FFFFFF 25px);
 	background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF 25px);
-	border-radius: 18px;
 	box-shadow: inset 0 -1px white, inset 0 1px 1px rgba(0, 0, 0, 0.05);
-	cursor: pointer;
-	box-sizing:content-box;
 }
 
 .switch-label {
@@ -65,7 +48,6 @@ button.arrow-up:before { content: ""; display: inline-block; width: 0; height: 0
 	height: inherit;
 	font-size: 10px;
 	text-transform: uppercase;
-	background: #eceeef;
 	border-radius: inherit;
 	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
 	box-sizing:content-box;
@@ -87,11 +69,6 @@ button.arrow-up:before { content: ""; display: inline-block; width: 0; height: 0
 .light .switch-label:before { opacity: 0; }
 .light .switch-label:after { opacity: 1; }
 .switch-handle {
-	position: absolute;
-	top: 4px;
-	left: 4px;
-	width: 28px;
-	height: 28px;
 	background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0);
 	background-image: -webkit-linear-gradient(top, #FFFFFF 40%, #f0f0f0);
 	border-radius: 100%;
@@ -110,7 +87,7 @@ button.arrow-up:before { content: ""; display: inline-block; width: 0; height: 0
 	border-radius: 6px;
 	box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
 }
-.light .switch-handle { left: 74px; box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2); }
+.light .switch-handle { left: 67px; box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2); }
  
 /* Transition
 ========================== */
