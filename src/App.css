@@ -12,8 +12,6 @@ input[type="text"] { text-align: center; }
 .test.level3.light .ticket-options:before { background: rgba(0, 0, 0, 0); }
 .test .ticket-options:before { content: ''; position: absolute; left: 0; right: 0; top: 0; bottom: 0; height: 100%; width: 100%; background: rgba(0, 0, 0,.8); }
 
-.bulb-container{left: 31%;
-	 z-index: 1; transform-origin: top; }
 
 .wire{ width: 4px; height: 130px; background: #fff; position: relative; z-index: 1; opacity: .1; }
 .connector{ background: #292929; width: 30px; aspect-ratio: 4/5; border-radius: 1px; display: flex; flex-direction: column; justify-content: space-evenly; 
@@ -30,7 +28,7 @@ input[type="text"] { text-align: center; }
 .metal-wire:nth-child(1){ top: -1px; }
 .metal-wire:nth-child(2){ top: -7px; }
 .metal-wire:nth-child(3){ top: -13px; }
-button.arw-cmn { width: 25px; height: 25px; cursor: pointer; background: #cccccc; margin: 5px; border-radius: 5px; border: 1px solid #aaaaaa;
+button.arw-cmn {background: #cccccc; margin: 5px; border-radius: 5px; border: 1px solid #aaaaaa;
 	 box-shadow: 1px 2px 15px #cccccc; text-align: center; line-height: 20px; }
 button.arrow-down:before { content: ''; display: inline-block; vertical-align: middle; width: 0; height: 0; border-style: solid;
 	 border-width: 8.7px 5px 0 5px; border-color: #007bff transparent transparent transparent; }

@@ -18,6 +18,12 @@ module.exports = {
         },
         // Add more custom colors as needed
       },
+      width: {
+        '25': '1.563rem', // Custom width value
+      },
+      height: {
+        '25': '1.563rem', // Custom height value
+      },
 
     },
   },
