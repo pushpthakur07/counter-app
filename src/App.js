@@ -170,12 +170,14 @@ function Garage() {
 
 
     </div>
+    <div className='extra'>
     <Garage />
     {nw}
     {re}
     {paragraph}
     <p class="before:content-['Not_Hovering'] hover:before:content-['Hovering']">{my2}</p>
     <p>{myE}</p>
+    </div>
     </div>
   );
 }
