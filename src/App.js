@@ -142,7 +142,7 @@ function Garage() {
       <UploadButton /> */}
      <div class="light_setng bg-stone-300 rounded-xl relative w-52 h-52 left-11 top-11 dflex justify-center border-solid border-8 border-lime-100">
         <div
-         class="light_btn switch block rounded-2xl box-content relative w-24 h-8 p-0.5 mr-2.5 mb-2.5 cursor-pointer" onClick={handleToggle}>
+         class="light_btn switch shadow-inner block rounded-2xl box-content relative w-24 h-8 p-0.5 mr-2.5 mb-2.5 cursor-pointer" onClick={handleToggle}>
         <span class="switch-label bg-customLime" data-on="On" data-off="Off"></span> 
           <span class="switch-handle absolute w-7 h-7 left-1 top-1"></span>
         </div>
@@ -154,7 +154,7 @@ function Garage() {
       </div>
 
     
-  <div class="bulb-container absolute top-0 dflex w-52 h-64 left-[31%]">
+  <div class="bulb-container absolute top-0 dflex w-52 h-64 left-[31%] z-10">
     <div class="wire"></div>
     <div class="connector">
       <div class="grove"></div>
@@ -174,7 +174,7 @@ function Garage() {
     {nw}
     {re}
     {paragraph}
-    <p>{my2}</p>
+    <p class="before:content-['Not_Hovering'] hover:before:content-['Hovering']">{my2}</p>
     <p>{myE}</p>
     </div>
   );

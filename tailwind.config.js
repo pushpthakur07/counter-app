@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
-        '11': '3rem', // Corresponds to left-32, sets the element 8rem from the left
+        '11': '3rem',
       },
       colors: {
         customLime: '#ECEEB2', // Custom color definition
@@ -16,13 +16,13 @@ module.exports = {
           500: '#00FF00', // Different shades of a custom color
           700: '#007700',
         },
-        // Add more custom colors as needed
       },
+
       width: {
         '25': '1.563rem', // Custom width value
       },
       height: {
-        '25': '1.563rem', // Custom height value
+        '25': '1.563rem', // Custom height
       },
 
     },
